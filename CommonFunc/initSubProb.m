@@ -15,5 +15,5 @@ population = EvaluatePopulation(population, problem);
 
 
 idealpoint = update_idealpoint(idealpoint,population);
-population = ScoreAssigment(SubProblems,population,[],idealpoint,TopologyTracker,0);
+population = ScoreAssigment(SubProblems,population,idealpoint,0);
 end
