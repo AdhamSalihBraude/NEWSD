@@ -3,7 +3,7 @@ NSubProblems = length(SubProblems);
 %% del unfeasble solutions
 for indIndex = 1 : length(Newindividuals)
     if sum(isnan(Newindividuals(indIndex).Obj)) > 0
-        Newindividuals(indIndex).Obj = -inf*ones(size(Newindividuals(indIndex).Obj));
+        Newindividuals(indIndex).Obj = inf*ones(size(Newindividuals(indIndex).Obj));
     end
 end
 %%
